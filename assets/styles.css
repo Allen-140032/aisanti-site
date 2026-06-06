@@ -684,6 +684,28 @@ a.tool-card:hover {
   font-size: 14px;
 }
 
+.expanded-log {
+  align-items: start;
+}
+
+.expanded-log .log-body p + p {
+  margin-top: 8px;
+}
+
+.preview-note {
+  margin: -12px 0 22px;
+  padding: 14px 16px;
+  border: 1px solid rgba(201, 100, 66, 0.18);
+  border-radius: 10px;
+  background: var(--accent-orange-soft);
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.preview-note strong {
+  color: var(--accent-orange);
+}
+
 .feature-card img {
   width: 100%;
   border-bottom: 1px solid var(--border);
@@ -847,6 +869,76 @@ a.tool-card:hover {
   font-size: 12px;
 }
 
+.data-table {
+  width: 100%;
+  margin: 18px 0 28px;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  background: var(--bg-white);
+  box-shadow: var(--shadow-card);
+}
+
+.data-table th,
+.data-table td {
+  padding: 13px 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 14px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.data-table th {
+  color: var(--text-primary);
+  font-weight: 850;
+}
+
+.review-card,
+.subscribe-band {
+  border: 1px solid rgba(26, 58, 92, 0.10);
+  border-radius: 12px;
+  background: #fbfaf7;
+}
+
+.review-card {
+  display: grid;
+  gap: 10px;
+  padding: 20px;
+}
+
+.review-card p {
+  margin: 0;
+}
+
+.subscribe-section {
+  padding-top: 0;
+}
+
+.subscribe-band {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 30px;
+}
+
+.subscribe-code {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  min-height: 54px;
+  padding: 0 18px;
+  border-radius: 10px;
+  background: var(--accent-blue);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 850;
+  white-space: nowrap;
+}
+
 .placeholder-card {
   padding: 40px 28px;
   border: 2px dashed var(--border);
@@ -963,6 +1055,22 @@ footer {
 
   .log-status {
     justify-items: start;
+  }
+
+  .subscribe-band {
+    width: calc(100vw - 44px);
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .subscribe-code {
+    width: 100%;
+  }
+
+  .data-table {
+    display: block;
+    overflow-x: auto;
   }
 
   .panel-header,

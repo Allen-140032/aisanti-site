@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="漂流日志 #3：从游击队到正规军。记录三体工作组从临时协作走向流水线、SOP 和独立站根据地的一周。">
+  <title>漂流日志 #3 | 从游击队到正规军 - 三体AI空间站</title>
+  <link rel="stylesheet" href="/assets/styles.css?v=20260603-2">
+</head>
+<body>
+  <nav class="site-nav"><div class="container nav-inner"><a class="brand" href="/">三体AI空间站 <span>Station</span></a><div class="nav-links"><a href="/cases/">案例工坊</a><a href="/tools/">工具集市</a><a href="/jiaorui/">画展</a><a href="/blog/" class="active">内容走廊</a><a href="/about/">关于</a><a href="/blog/" class="nav-cta">回走廊</a></div></div></nav>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">漂流日志 · 第三周 · 独立站沉淀版</div>
+        <h1 class="page-title">漂流日志 #3 | 从游击队到正规军</h1>
+        <p class="page-copy">这周我们有了视觉能力、事实核验、副审流程、情报采集 SOP，也有了自己的根据地。公众号是航线，独立站是港口。</p>
+        <div class="tag-row"><span class="tag">2026-06-06</span><span class="tag">Build in Public</span><span class="tag">流水线</span><span class="tag orange">独立站限定复盘</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container case-layout">
+        <article class="article-card">
+          <figure class="media-box">
+            <img src="/assets/images/cover-drift-log-03.png" alt="漂流日志 #3 封面：从游击队到正规军">
+            <figcaption>漂流日志 #3 封面：从游击队到正规军。</figcaption>
+          </figure>
+
+          <h2>开场</h2>
+          <p>我叫 Allen。</p>
+          <p>上周的日志，我写了铁三角成型的故事：C 盘急救、张三入伙、四十分钟闭环。那是第二周的主题：有了船。</p>
+          <p>这周我才明白：有船和学会开船，是两回事。</p>
+          <p>第一周，我们在荒岛上挖井，先解决有没有水的问题。第二周，我们造出了船，第一次把一篇文章从想法推到发布。第三周，我们开始学会排班、查航线、建港口。船能出海不算本事，能稳定出海，才算一支队伍。</p>
+
+          <h2>第一幕：终于能看见了</h2>
+          <p>周三晚上，我们终于又试了一次 Vision 配置。我在群里问星期五：“你现在能看到图片了么？”</p>
+          <p>之前我们的协作一直有个盲区：我看得到图，星期五看不到。每次我发了截图问“这个域名你觉得怎么样”，她只能回：“校长，我看不到图片内容。”</p>
+          <p>折腾了两天，周五晚上，星期五的眼睛终于亮了。那一刻，我脑子里只有一个念头：像一直靠无线电航行的人，第一次看见了海图。</p>
+
+          <h2>第二幕：翻车没有白翻</h2>
+          <figure class="media-box">
+            <img src="/assets/images/drift-log-03-risk.png" alt="从风险标注到可复用流程">
+            <figcaption>从风险标注到可复用流程：一次翻车变成下一轮的检查表。</figcaption>
+          </figure>
+          <p>周四，张三审了热点快播 #3+#4 的终稿，标出三处事实风险：Gemini 表述、Anthropic 融资数字、Uber 月费解读。</p>
+          <p>张三没有重写星期五的叙事，他只把事实风险一条条标出来，附上来源链接和处理建议。那句话救了这一整周：“这次张三不是来挑刺的，而是把坑标出来，让下一篇文章少掉进去一次。”</p>
+          <p>于是我们做了两件事：把豆包 Agent 接入副审流程，把内容生产拆成从情报采集到多平台发布的七个环节。</p>
+
+          <h2>第三幕：流水线转起来</h2>
+          <figure class="media-box">
+            <img src="/assets/images/drift-log-03-pipeline.png" alt="七个环节协作流水线">
+            <figcaption>七个环节协作流水线：每条内容不再靠一个人硬扛。</figcaption>
+          </figure>
+          <p>流水线方案 V1.1 定稿前，水手勃勃用 Crawl4AI 连续爬了 8 条 URL：公众号文章、Hacker News、36 氪、技术博客。7 条成功，1 条 404，成功率 87.5%。</p>
+          <p>他把每一条失败都记下来，变成了后来那 5 项建议的种子：情报交付提前、渠道扩展、字段扩展、采集量提升、时间预算调整。</p>
+          <p>第二周我们有了船。第三周，我们开始建港口。公众号是航线，独立网站是根据地。</p>
+          <figure class="media-box">
+            <img src="/assets/images/drift-log-03-base.png" alt="公众号是航线，独立网站是根据地">
+            <figcaption>公众号负责分发，独立站负责沉淀。</figcaption>
+          </figure>
+
+          <h2>这周的数据</h2>
+          <table class="data-table">
+            <thead><tr><th>维度</th><th>第二周末</th><th>第三周末</th></tr></thead>
+            <tbody>
+              <tr><td>团队角色定位</td><td>铁三角成型</td><td>各司其职 + 流水线</td></tr>
+              <tr><td>内容生产流程</td><td>个人英雄主义</td><td>7 环节协作流水线</td></tr>
+              <tr><td>情报采集</td><td>星期五兼职做</td><td>水手勃勃专职 + Crawl4AI + SOP</td></tr>
+              <tr><td>事实核验</td><td>写完了再发现错</td><td>写前预核验 + 写后副审</td></tr>
+              <tr><td>独立网站</td><td>无</td><td>aisanti.site 上线</td></tr>
+              <tr><td>出书计划</td><td>尚未成型</td><td>开始作为连载故事沉淀</td></tr>
+            </tbody>
+          </table>
+
+          <h2>船长手记</h2>
+          <p>这周我最大的感受是：翻车不可怕，翻完车没有收获才可怕。</p>
+          <p>一个错误，四个人吸收了一遍。下次再犯的概率，接近零。从情报采集到多平台发布，七个环节接力跑完；水手勃勃、星期五、豆包、张三、校长各守一段。每条内容都不再靠一个人硬扛。</p>
+          <p><strong>这是第三周。我们终于从游击队，变成了正规军。</strong></p>
+
+          <h2>独立站限定复盘卡</h2>
+          <div class="review-card">
+            <p><strong>这一篇为什么值得迁移：</strong>它把“团队从临场协作到流程协作”的转折讲清楚了，是空间站后续内容、工具、案例和成书计划的关键节点。</p>
+            <p><strong>沉淀资产：</strong>七环节内容流水线、情报采集 SOP、事实预核验规则、工具舱和独立站共建 SOP。</p>
+            <p><strong>下一步：</strong>把这篇文章拆成一张流程图、一页案例复盘和一个“内容生产流水线”工具说明页。</p>
+          </div>
+        </article>
+
+        <aside class="aside">
+          <div class="aside-card">
+            <h3>本篇索引</h3>
+            <a href="/blog/">内容走廊</a>
+            <a href="/tools/">工具舱</a>
+            <a href="/cases/short-video-pipeline/">短视频流水线案例</a>
+          </div>
+          <div class="aside-card subscribe-card">
+            <h3>继续追踪</h3>
+            <p>关注公众号「AI 漂流实录」，每周五看热点快播，周末看漂流日志。</p>
+            <div class="subscribe-code">AI 漂流实录</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container footer-inner"><div><div class="brand-line">AI，认真做。</div><div>三体AI空间站 · aisanti.site</div></div><div>三体工作组 · 2026</div></div></footer>
+</body>
+</html>
