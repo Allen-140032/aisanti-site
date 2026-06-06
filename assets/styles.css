@@ -231,7 +231,8 @@ h1 {
   font-weight: 850;
   letter-spacing: 0;
   line-height: 1.12;
-  overflow-wrap: anywhere;
+  overflow-wrap: normal;
+  word-break: keep-all;
 }
 
 .hero-title span {
@@ -239,6 +240,10 @@ h1 {
 }
 
 .hero-title .title-line-main {
+  white-space: nowrap;
+}
+
+.hero-title .title-line-sub {
   white-space: nowrap;
 }
 
@@ -1022,8 +1027,8 @@ footer {
   .page-title {
     max-width: calc(100vw - 44px);
     font-size: 34px;
-    word-break: break-all;
-    overflow-wrap: anywhere;
+    word-break: keep-all;
+    overflow-wrap: normal;
   }
 
   .hero-copy,
@@ -1126,7 +1131,7 @@ footer {
 
   h1,
   .page-title {
-    font-size: 29px;
+    font-size: 27px;
     line-height: 1.22;
   }
 
