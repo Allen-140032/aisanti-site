@@ -985,6 +985,42 @@ footer {
   font-weight: 800;
 }
 
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.footer-links a:hover {
+  color: var(--accent-blue);
+}
+
+.narrow {
+  max-width: 860px;
+}
+
+.policy-card h2 {
+  margin-top: 26px;
+  margin-bottom: 10px;
+}
+
+.policy-card a,
+.contact-panel a {
+  color: var(--accent-blue);
+  font-weight: 800;
+}
+
+.contact-panel {
+  margin-top: 28px;
+}
+
+.en-hero .hero-copy {
+  max-width: 560px;
+}
+
 @media (max-width: 900px) {
   .hero-grid,
   .case-layout {
@@ -1029,6 +1065,11 @@ footer {
     font-size: 34px;
     word-break: keep-all;
     overflow-wrap: normal;
+  }
+
+  .page-title {
+    word-break: normal;
+    overflow-wrap: anywhere;
   }
 
   .hero-copy,
@@ -1113,6 +1154,10 @@ footer {
   footer .footer-inner {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
   }
 }
 
