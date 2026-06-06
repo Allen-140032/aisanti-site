@@ -150,22 +150,55 @@ a {
 }
 
 .hero {
-  background: var(--bg-white);
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(26, 58, 92, 0.035) 1px, transparent 1px) 0 0 / 72px 72px,
+    linear-gradient(0deg, rgba(26, 58, 92, 0.028) 1px, transparent 1px) 0 0 / 72px 72px,
+    #fbfaf7;
   border-bottom: 1px solid var(--border);
   padding: 72px 0;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(360px, 1fr);
+  grid-template-columns: minmax(0, 1.08fr) minmax(420px, 0.92fr);
   align-items: center;
-  gap: 60px;
+  gap: 52px;
 }
 
 .hero-grid > * {
   width: 100%;
   max-width: 100%;
   min-width: 0;
+}
+
+.hero-left {
+  position: relative;
+  padding: 18px 0 18px 34px;
+}
+
+.hero-left::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  bottom: 12px;
+  left: 0;
+  width: 3px;
+  border-radius: 999px;
+  background: var(--accent-orange);
+}
+
+.hero-left::after {
+  content: "BUILD LOG";
+  position: absolute;
+  right: 12px;
+  bottom: -10px;
+  color: rgba(26, 58, 92, 0.10);
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1;
+  pointer-events: none;
 }
 
 .eyebrow {
@@ -194,11 +227,19 @@ h1 {
   max-width: 100%;
   margin-bottom: 20px;
   color: var(--text-primary);
-  font-size: 46px;
+  font-size: 44px;
   font-weight: 850;
   letter-spacing: 0;
   line-height: 1.12;
   overflow-wrap: anywhere;
+}
+
+.hero-title span {
+  display: block;
+}
+
+.hero-title .title-line-main {
+  white-space: nowrap;
 }
 
 .hero-copy {
@@ -212,6 +253,36 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+.hero-proof {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  max-width: 520px;
+  margin-top: 30px;
+}
+
+.hero-proof div {
+  padding: 12px 14px;
+  border: 1px solid rgba(26, 58, 92, 0.10);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.70);
+}
+
+.hero-proof span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--accent-orange);
+  font-size: 11px;
+  font-weight: 850;
+}
+
+.hero-proof strong {
+  display: block;
+  color: var(--accent-blue);
+  font-size: 13px;
+  line-height: 1.2;
 }
 
 .mission-panel {
@@ -792,6 +863,24 @@ footer {
     padding: 48px 0;
   }
 
+  .hero-left {
+    padding: 10px 0 8px 22px;
+  }
+
+  .hero-left::after {
+    display: none;
+  }
+
+  .hero-title .title-line-main {
+    white-space: normal;
+  }
+
+  .hero-proof {
+    width: calc(100vw - 66px);
+    grid-template-columns: 1fr;
+    max-width: none;
+  }
+
   h1,
   .page-title {
     max-width: calc(100vw - 44px);
@@ -899,6 +988,14 @@ footer {
 
   .mission-panel {
     padding: 20px;
+  }
+
+  .hero-left {
+    padding-left: 18px;
+  }
+
+  .hero-proof {
+    width: calc(100vw - 58px);
   }
 
   .role-grid.compact {
